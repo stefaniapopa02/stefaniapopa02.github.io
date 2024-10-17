@@ -1,0 +1,93 @@
+/**
+
+  Use animations here. Useful resources on http://docs.codacloud.net
+
+**/
+
+/* Animația omului care sare */
+.man {
+  animation: jump 1.5s infinite;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px); /* Omul sare */
+  }
+}
+
+/* Animăm capul pentru un ușor balans */
+.head {
+  animation: headBounce 1.5s infinite;
+}
+
+@keyframes headBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Capul se ridică ușor */
+  }
+}
+
+/* Animăm mâna stângă pentru mișcare */
+.left.hand {
+  animation: leftHandMove 1.5s infinite;
+  transform-origin: top center;
+}
+
+@keyframes leftHandMove {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg); /* Mâna stângă se mișcă spre interior */
+  }
+}
+
+/* Animăm mâna dreaptă */
+.right.hand {
+  animation: rightHandMove 1.5s infinite;
+  transform-origin: top center;
+}
+
+@keyframes rightHandMove {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg); /* Mâna dreaptă se mișcă spre exterior */
+  }
+}
+
+/* Animăm piciorul stâng */
+.left.foot {
+  animation: leftFootMove 1.5s infinite;
+  transform-origin: top center;
+}
+
+@keyframes leftFootMove {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg); /* Piciorul stâng se mișcă ușor spre exterior */
+  }
+}
+
+/* Animăm piciorul drept */
+.right.foot {
+  animation: rightFootMove 1.5s infinite;
+  transform-origin: top center;
+}
+
+@keyframes rightFootMove {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg); /* Piciorul drept se mișcă ușor spre interior */
+  }
+}
